@@ -9,3 +9,8 @@ app.listen(process.env.PORT || port, () => { //declare a web server
 app.get('/', (req, res) => { //can declare get our put route, first param is the route, second param is the function that is executed
     res.send("Hello world");
 });
+
+app.post("/api/auth", async (req, res) => {
+
+    res.send("Hello world post");
+});
